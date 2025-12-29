@@ -17,12 +17,14 @@ const DB = process.env.DATABASE.replace(
 );
 
 mongoose
-  .connect(DB, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-  })
+  .connect(DB, 
+  //   {
+  //   useNewUrlParser: true,
+  //   useCreateIndex: true,
+  //   useFindAndModify: false,
+  //   useUnifiedTopology: true
+  // }
+)
   .then(() => {
     // console.log(con.Connection);
     console.log('DB connection successfully');
